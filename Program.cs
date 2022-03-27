@@ -2,11 +2,11 @@
 
 namespace Travel_And_Tourism_Project
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new MenuSelection();
         }
     }
 }
