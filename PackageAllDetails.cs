@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Travel_And_Tourism_Project.Models;
@@ -8,7 +9,6 @@ using System.Linq;
 
 namespace Travel_And_Tourism_Project
 {
-
     public class PackageAllDetails
     {
         //first categories
