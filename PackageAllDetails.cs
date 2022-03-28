@@ -73,7 +73,7 @@ namespace Travel_And_Tourism_Project
                     },
                     new Packages
                     {
-                        PName="Magnificent Ooty and Coorg Package",//
+                        PName="Phi-Phi-Island",//
                         PPrice=15000,
                         PDestination="Ooty",
                         PNoofdays=5,
@@ -83,33 +83,13 @@ namespace Travel_And_Tourism_Project
                     },
                     new Packages
                     {
-                        PName="Sweet Mist Of Manali",//
+                        PName="Phi-Phi-Island",//
                         PPrice=18000,
-                        PDestination="Kulu Manali",
+                        PDestination="kulumanar",
                         PNoofdays=4,
-                        PStartdate=DateTime.Parse("01-08-2022"),
-                        PEnddate=DateTime.Parse("01-09-2022"),
+                        PStartdate=DateTime.Parse("01-07-2022"),
+                        PEnddate=DateTime.Parse("01-08-2022"),
                         PcatId=2
-                    },
-                    new Packages
-                    {
-                        PName="Kodaikanal Vacation Package",//
-                        PPrice=10000,
-                        PDestination="Kodaikanal",
-                        PNoofdays=5,
-                        PStartdate=DateTime.Parse("01-07-2022"),
-                        PEnddate=DateTime.Parse("01-08-2022"),
-                        PcatId=3
-                    },
-                    new Packages
-                    {
-                        PName="Misty Munnar Package",//
-                        PPrice=12000,
-                        PDestination="Munnar",
-                        PNoofdays=5,
-                        PStartdate=DateTime.Parse("01-07-2022"),
-                        PEnddate=DateTime.Parse("01-08-2022"),
-                        PcatId=3
                     },
                 };
             }
@@ -117,6 +97,68 @@ namespace Travel_And_Tourism_Project
             {
                 WriteLine("Error in insertion " + ex.Message);
             }
+        }
+
+        public void insertpackageddetails()
+        {
+            List<PackageDetails> lstdetails = new List<PackageDetails>()
+            {
+                new PackageDetails
+                {
+                    PId=101,
+                    PdDescription="This is a coconut tree vacation package which is allocated in maldive",
+                    PdDays=6
+                },
+                new PackageDetails
+                {
+                    PId=102,
+                    PdDescription="This is a kani palm beach vacation package which is allocated in maldive",
+                    PdDays=6
+                },
+                new PackageDetails
+                {
+                    PId=103,
+                    PdDescription="This is a phi-phi island located in bangkok",
+                    PdDays=10
+                },
+                new PackageDetails
+                {
+                    PId=104,
+                    PdDescription="This is pattaya coral island located in bangkok",
+                    PdDays=10
+                },
+                new PackageDetails
+                {
+                    PId=105,
+                    PdDescription="This is kashmir holiday with airfare in kashmir",
+                    PdDays=4
+                },
+                new PackageDetails
+                {
+                    PId=106,
+                    PdDescription="This is coonor tour located in ooty",
+                    PdDays=5
+                },
+                new PackageDetails
+                {
+                    PId=107,
+                    PdDescription="This is Local Sight Seeing Tour Package in kulumanali",
+                    PdDays=4
+                },
+                new PackageDetails
+                {
+                    PId=108,
+                    PdDescription="This is Boracay Package in philliphines",
+                    PdDays=4
+                },
+                new PackageDetails
+                {
+                    PId=109,
+                    PdDescription="Centra Grand Beach in Thailand",
+                    PdDays=4
+                }
+
+            };
         }
     }
 }
