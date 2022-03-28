@@ -23,5 +23,6 @@ namespace Travel_And_Tourism_Project.Models
         public virtual Packages P { get; set; }
         public virtual Payment Pay { get; set; }
         public virtual PackageDetails Pd { get; set; }
+        public string test { get; set; }
     }
 }

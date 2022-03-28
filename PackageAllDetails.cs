@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Travel_And_Tourism_Project.Models;
 using static System.Console;
 using static System.Convert;
+using System.Linq;
 namespace Travel_And_Tourism_Project
 {
-    public class PackageAllDetails
+    public class PackageAllDetails:DbContext 
     {
         //first categories
         TourismManagementContext dbcontext = new TourismManagementContext();
