@@ -14,6 +14,7 @@ namespace Travel_And_Tourism_Project
         {
             try
             {
+                //Adding Package Categories to the List of Package Category called lstcategories
                 List<PackageCategory> lstcategories = new List<PackageCategory>()
                 {
                     new PackageCategory{PcatName = "Summer Category", PcatDescription = "This packages contains all summer season related travels"},
@@ -37,6 +38,7 @@ namespace Travel_And_Tourism_Project
                 //Addding all the packages names to the list which will insert directly into the table by admin.
                 List<Packages> lstpackages = new List<Packages>()
                 {
+                    //Package Price is Per Person
                     new Packages{PName="Coconut Tree vacation Package",PPrice=7000,PDestination="Maldive",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
                     new Packages{PName="Kani Palm Beach Vacation Package",PPrice=10000,PDestination="Maldive",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
                     new Packages
@@ -61,7 +63,7 @@ namespace Travel_And_Tourism_Project
                     },
                     new Packages
                     {
-                        PName="Phi-Phi-Island",//
+                        PName="Exotic Kashmir with Sonmarg",//
                         PPrice=12000,
                         PDestination="Kashmir",
                         PNoofdays=4,
@@ -71,9 +73,9 @@ namespace Travel_And_Tourism_Project
                     },
                     new Packages
                     {
-                        PName="Phi-Phi-Island",//
+                        PName="Magnificent Ooty and Coorg Package",//
                         PPrice=15000,
-                        PDestination="ooty",
+                        PDestination="Ooty",
                         PNoofdays=5,
                         PStartdate=DateTime.Parse("01-08-2022"),
                         PEnddate=DateTime.Parse("30-10-2022"),
@@ -81,13 +83,33 @@ namespace Travel_And_Tourism_Project
                     },
                     new Packages
                     {
-                        PName="Phi-Phi-Island",//
+                        PName="Sweet Mist Of Manali",//
                         PPrice=18000,
-                        PDestination="kulumanar",
+                        PDestination="Kulu Manali",
                         PNoofdays=4,
                         PStartdate=DateTime.Parse("01-08-2022"),
                         PEnddate=DateTime.Parse("01-09-2022"),
                         PcatId=2
+                    },
+                    new Packages
+                    {
+                        PName="Kodaikanal Vacation Package",//
+                        PPrice=10000,
+                        PDestination="Kodaikanal",
+                        PNoofdays=5,
+                        PStartdate=DateTime.Parse("01-07-2022"),
+                        PEnddate=DateTime.Parse("01-08-2022"),
+                        PcatId=3
+                    },
+                    new Packages
+                    {
+                        PName="Misty Munnar Package",//
+                        PPrice=12000,
+                        PDestination="Munnar",
+                        PNoofdays=5,
+                        PStartdate=DateTime.Parse("01-07-2022"),
+                        PEnddate=DateTime.Parse("01-08-2022"),
+                        PcatId=3
                     },
                 };
             }
