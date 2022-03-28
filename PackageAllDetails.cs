@@ -9,6 +9,7 @@ namespace Travel_And_Tourism_Project
     public class PackageAllDetails
     {
         //first categories
+        TourismManagementContext dbcontext = new TourismManagementContext();
 
         public void insertpackagecategories()
         {
@@ -178,6 +179,48 @@ namespace Travel_And_Tourism_Project
                     PdDays=4
                 }
             };
+        }
+        //Show all categories 
+        public void showallcategories()
+        {
+            var showcategories = (from categories in dbcontext.PackageCategory
+                                  select categories).ToList<PackageCategory>();
+
+            //printing the details of categories
+            WriteLine("CategoryId\t\tCategoryName\t\tDescription");
+            foreach (var item in showcategories)
+            {
+                WriteLine(item.PcatId + "\t" + item.PcatName + "\t" + item.PcatDescription);
+            }
+        }
+
+        //showing all packages under the selected category
+        public void showpackages(int categoryid)
+        {
+            var showpackage = (from c in dbcontext.PackageCategory
+                               join p in dbcontext.Packages on
+                               c.PcatId equals p.PcatId
+                               join d in dbcontext.PackageDetails on
+                               p.PId equals d.PId
+                               where c.PcatId == categoryid
+                               select new
+                               {
+                                   categoryname = c.PcatName,
+                                   packagename = p.PName,
+                                   packagedescription = d.PdDescription,
+                                   packageprice = p.PPrice,
+                                   packagelocation = p.PDestination,
+                                   packagestart = p.PStartdate,
+                                   packageend = p.PEnddate,
+                                   totaldays = p.PNoofdays
+                               });
+            WriteLine("Categoryname\t\tPackagename\t\tDescription\t\tPrice\t\tLocation\t\tStartDate\t\tEndDate\t\tTotalDays");
+            foreach (var item in showpackage)
+            {
+                WriteLine(item.categoryname + "\t" + item.packagename + "\t" + item.packagedescription + "\t" + item.packageprice +
+                    "\t" + item.packagelocation + "\t" + item.packagestart + "\t" + item.packageend + "\t" + item.totaldays);
+            }
+
         }
     }
 }
