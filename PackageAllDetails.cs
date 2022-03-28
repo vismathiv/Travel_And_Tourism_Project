@@ -4,8 +4,11 @@ using System.Text;
 using Travel_And_Tourism_Project.Models;
 using static System.Console;
 using static System.Convert;
+using System.Linq;
+
 namespace Travel_And_Tourism_Project
 {
+
     public class PackageAllDetails
     {
         //first categories
@@ -25,6 +28,8 @@ namespace Travel_And_Tourism_Project
                     new PackageCategory{PcatName="Spring Category",PcatDescription="This packages contains all spring season related travels"},
                     new PackageCategory{PcatName="Autumn Category",PcatDescription="This packages contains all Autumn season related travels"}
                 };
+                dbcontext.PackageCategory.AddRange(lstcategories);
+                dbcontext.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -192,7 +197,7 @@ namespace Travel_And_Tourism_Project
             {
                 WriteLine(item.PcatId + "\t" + item.PcatName + "\t" + item.PcatDescription);
             }
-        }
+        }//hello
 
         //showing all packages under the selected category
         public void showpackages(int categoryid)
