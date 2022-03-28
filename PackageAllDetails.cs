@@ -34,16 +34,61 @@ namespace Travel_And_Tourism_Project
         {
             try
             {
+                //Addding all the packages names to the list which will insert directly into the table by admin.
                 List<Packages> lstpackages = new List<Packages>()
                 {
                     new Packages{PName="Coconut Tree vacation Package",PPrice=7000,PDestination="Maldive",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
                     new Packages{PName="Kani Palm Beach Vacation Package",PPrice=10000,PDestination="Maldive",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
-                    new Packages{PName="Goa Package of Kani Palm Beach Vacation Package",PPrice=10000,PDestination="Goa",PNoofdays=3,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
-                    new Packages{PName="Goa Package of Kani Palm Beach Vacation Package",PPrice=10000,PDestination="Goa",PNoofdays=3,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
-                    new Packages{PName="Bangkok Package",PPrice=40000,PDestination="Bangkok",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
-                    new Packages{PName="Maldive Package of 5 days",PPrice=7000,PDestination="Maldive",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
-                    new Packages{PName="Maldive Package of 5 days",PPrice=7000,PDestination="Maldive",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 },
-                    new Packages{PName="Maldive Package of 5 days",PPrice=7000,PDestination="Maldive",PNoofdays=6,PStartdate=DateTime.Parse("03-01-2022"),PEnddate=DateTime.Parse("05-01-2022"),PcatId=1 }
+                    new Packages
+                    {
+                        PName="Phi-Phi-Island",
+                        PPrice=20000,
+                        PDestination="Bangkok",
+                        PNoofdays=10,
+                        PStartdate=DateTime.Parse("01-02-2022"),
+                        PEnddate=DateTime.Parse("28-02-2022"),
+                        PcatId=1
+                    },
+                    new Packages
+                    {
+                        PName="Pattaya Coral Island",
+                        PPrice=25000,
+                        PDestination="Bangkok",
+                        PNoofdays=10,
+                        PStartdate=DateTime.Parse("01-03-2022"),
+                        PEnddate=DateTime.Parse("31-03-2022"),
+                        PcatId=1
+                    },
+                    new Packages
+                    {
+                        PName="Phi-Phi-Island",//
+                        PPrice=12000,
+                        PDestination="Kashmir",
+                        PNoofdays=4,
+                        PStartdate=DateTime.Parse("01-08-2022"),
+                        PEnddate=DateTime.Parse("01-09-2022"),
+                        PcatId=2
+                    },
+                    new Packages
+                    {
+                        PName="Phi-Phi-Island",//
+                        PPrice=15000,
+                        PDestination="ooty",
+                        PNoofdays=5,
+                        PStartdate=DateTime.Parse("01-08-2022"),
+                        PEnddate=DateTime.Parse("30-10-2022"),
+                        PcatId=2
+                    },
+                    new Packages
+                    {
+                        PName="Phi-Phi-Island",//
+                        PPrice=18000,
+                        PDestination="kulumanar",
+                        PNoofdays=4,
+                        PStartdate=DateTime.Parse("01-08-2022"),
+                        PEnddate=DateTime.Parse("01-09-2022"),
+                        PcatId=2
+                    },
                 };
             }
             catch(Exception ex)
