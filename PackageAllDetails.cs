@@ -73,7 +73,7 @@ namespace Travel_And_Tourism_Project
                     },
                     new Packages
                     {
-                        PName="Phi-Phi-Island",//
+                        PName="Magnificent Ooty Package",//
                         PPrice=15000,
                         PDestination="Ooty",
                         PNoofdays=5,
@@ -83,13 +83,33 @@ namespace Travel_And_Tourism_Project
                     },
                     new Packages
                     {
-                        PName="Phi-Phi-Island",//
+                        PName="Sweet Mist Of Manali",//
                         PPrice=18000,
-                        PDestination="kulumanar",
+                        PDestination="Kulumanali",
+                        PNoofdays=4,
+                        PStartdate=DateTime.Parse("01-08-2022"),
+                        PEnddate=DateTime.Parse("01-09-2022"),
+                        PcatId=2
+                    },
+                     new Packages
+                    {
+                        PName="Mist Munnar Package",//
+                        PPrice=15000,
+                        PDestination="Munnar",
+                        PNoofdays=5,
+                        PStartdate=DateTime.Parse("01-07-2022"),
+                        PEnddate=DateTime.Parse("01-08-2022"),
+                        PcatId=3
+                    },
+                     new Packages
+                    {
+                        PName="Kodaikanal Vacation Package",//
+                        PPrice=12000,
+                        PDestination="Kodaikanal",
                         PNoofdays=4,
                         PStartdate=DateTime.Parse("01-07-2022"),
                         PEnddate=DateTime.Parse("01-08-2022"),
-                        PcatId=2
+                        PcatId=3
                     },
                 };
             }
@@ -157,7 +177,6 @@ namespace Travel_And_Tourism_Project
                     PdDescription="Centra Grand Beach in Thailand",
                     PdDays=4
                 }
-
             };
         }
     }
