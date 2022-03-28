@@ -197,7 +197,7 @@ namespace Travel_And_Tourism_Project
             {
                 WriteLine(item.PcatId + "\t" + item.PcatName + "\t" + item.PcatDescription);
             }
-        }//hello
+        }
 
         //showing all packages under the selected category
         public void showpackages(int categoryid)
